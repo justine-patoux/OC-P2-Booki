@@ -1,2 +1,1 @@
-<strong>Project 2 - Booki (formerly Reservia)</strong></br>
-Second project from OpenClassrooms' Js/React program : "Transformez une maquette en site web avec HTML & CSS"
+booki - Deuxième projet du parcours "Développeur d'applications Js/React" d'OpenClassrooms. L'objectif est d'intégrer une page web en responsive et en utilisant HTML et CSS.
