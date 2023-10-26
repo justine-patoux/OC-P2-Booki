@@ -92,6 +92,20 @@ li {
     margin: 10px 0;
 }
 
+.search__info {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.search__info svg {
+    color: var(--primary-colour);
+    padding: 5px 10px;
+    margin-right: 15px;
+    border: 1px solid var(--background);
+    border-radius: 50%;
+}
+
 .searchbar {
     width: 377px;
     height: 49px;
@@ -118,6 +132,10 @@ li {
 
 .searchbar__input:focus {
     outline: none;
+}
+
+.searchbar__input:focus::placeholder {
+    opacity: 0;
 }
 
 .searchbar__input::placeholder {
