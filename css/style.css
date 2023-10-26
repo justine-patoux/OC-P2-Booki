@@ -130,16 +130,16 @@ li {
     padding: 10px;
 }
 
+.searchbar__input::placeholder {
+    color: inherit;
+}
+
 .searchbar__input:focus {
     outline: none;
 }
 
 .searchbar__input:focus::placeholder {
     opacity: 0;
-}
-
-.searchbar__input::placeholder {
-    color: inherit;
 }
 
 .searchbar__btn {
@@ -178,22 +178,34 @@ li {
     }
 }
 
-/* Filters */
+/* Filters section */
 
 .filters h2 {
     font-size: 1.3em;
-    margin-bottom: 20px;
+    margin: 0 20px 0 0;
+}
+
+.filters__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .filters__list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filters__item {
+    width: 173px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1em;
     font-weight: 700;
-    margin-right: 10px;
-    padding: 14px 19px;
+    margin: 10px 8px 0 0;
+    padding: 4px 19px;
     border: 2px solid var(--background);
     border-radius: 25px;
     cursor: pointer;
@@ -205,5 +217,29 @@ li {
 
 .filters__item svg {
     color: var(--primary-colour);
-    margin-right: 14px;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+
+    .filters__container {
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+/* Lodging section */
+
+.lodging {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lodging__card-container {
+    background-color: var(--background);
+    border-radius: 15px;
 }

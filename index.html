@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Booki - Page d'accueil</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/331bae651e.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header id="header" class="header container">
-            <a id="header-logo" class="header__logo" href="index.html" title="Retour à la page d'accueil"><img src="img/logo/Booki.png" alt="logo-booki"></a>
-            <nav class="header__navbar">
-                <ul class="header__navlist">
-                    <a class="header__navitem" href=""><li>Hébergements</li></a>
-                    <a class="header__navitem" href=""><li>Activités</li></a>
-                </ul>
-            </nav>
-        </header>
-        <main id="main" class="main container">
-            <section id="search" class="search">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
-                <div class="searchbar">
-                    <div class="searchbar__icon">
-                        <i class="fas fa-location-dot fa-lg"></i>
-                    </div>
-                    <input class="searchbar__input" type="text" placeholder="Marseille, France">
-                    <button class="searchbar__btn searchbar__btn--desktop" type="submit">Rechercher</button>
-                    <button class="searchbar__btn searchbar__btn--mobile" type="submit">
-                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                    </button>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booki - Page d'accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/331bae651e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="header container">
+        <a id="header-logo" class="header__logo" href="index.html" title="Retour à la page d'accueil"><img src="img/logo/Booki.png" alt="logo-booki"></a>
+        <nav class="header__navbar">
+            <ul class="header__navlist">
+                <li class="header__navitem"><a href="#lodging">Hébergements</a></li>
+                <li class="header__navitem"><a href="#activities">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="main container">
+        <section id="search" class="search">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div class="searchbar">
+                <div class="searchbar__icon">
+                    <i class="fas fa-location-dot fa-lg"></i>
                 </div>
-            </section>
-            <section id="filters" class="filters">
+                <input class="searchbar__input" type="text" placeholder="Marseille, France">
+                <button class="searchbar__btn searchbar__btn--desktop" type="submit">Rechercher</button>
+                <button class="searchbar__btn searchbar__btn--mobile" type="submit">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </button>
+            </div>
+        </section>
+        <section id="filters" class="filters">
+            <div class="filters__container">
                 <h2>Filtres</h2>
                 <ul class="filters__list">
                     <li class="filters__item"><i class="fa-solid fa-money-bill-wave fa-lg"></i> Économique</li>
@@ -43,12 +44,22 @@
                     <li class="filters__item"><i class="fa-solid fa-heart fa-lg"></i> Romantique</li>
                     <li class="filters__item"><i class="fa-solid fa-fire-flame-curved fa-lg"></i> Nos pépites</li>
                 </ul>
-                <div class="search__info">
-                    <i class="fa-solid fa-info fa-sm"></i>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            </section>
-        </main>
-        <footer></footer>
-    </body>
+            </div>
+            <div class="search__info">
+                <i class="fa-solid fa-info fa-sm"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+        <section id="lodging" class="lodging">
+            <div class="lodging__card-container">
+                <h3>Hébergements à Marseille</h3>
+            </div>
+            <div class="lodging__card-container">
+                <h3>Les plus populaires</h3>
+            </div>
+        </section>
+        <section id="activities"></section>
+    </main>
+    <footer></footer>
+</body>
 </html>
