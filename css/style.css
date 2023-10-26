@@ -2,7 +2,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
-    border: 1px solid red;
+    
 }
 
 /* Colours */
@@ -16,4 +16,67 @@
 /* Typography */
 :root {
     --primary-font: 'Raleway', Arial, sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    font-family: var(--primary-font);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.header__logo {
+    max-width: 100px;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__navbar {
+    width: 25%;
+    height: 100%;
+}
+
+.header__navlist {
+    display: flex;
+    height: 100%;
+}
+
+.header__navitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header__navitem:hover {
+    color: var(--primary-colour);
+    border-top: 2px solid var(--primary-colour);
 }
