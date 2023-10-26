@@ -263,12 +263,84 @@ li {
 
 .lodging {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     margin: 50px 0;
 }
 
 .lodging__card-container {
     background-color: var(--shadow);
     border-radius: 15px;
-    padding: 35px 25px;
+    padding: 25px;
+}
+
+.lodging__card-container h3 {
+    margin-bottom: 20px;
+}
+
+.lodging__card-container h5 {
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+    padding: 8px;
+}
+
+/* Hébergements à Marseille */
+
+.city {
+    width: 70%;
+}
+
+.city__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.city__card {
+    height: 197px;
+}
+
+.city__card-img {
+    height: 124px;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Les plus populaires */
+
+.popular {
+    width: 30%;
+}
+
+.popular__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popular__card {
+    height: 143px;
+}
+
+@media (max-width: 991px) {
+    .lodging {
+        flex-direction: column;
+    }
+
+    .city {
+        width: 100%;
+    }
+
+    .popular {
+        width: 100%;
+    }
+
+    .popular__cards-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
