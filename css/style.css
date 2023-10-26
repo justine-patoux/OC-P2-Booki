@@ -82,6 +82,33 @@ li {
     border-top: 2px solid var(--primary-colour);
 }
 
+@media (max-width: 768px) {
+
+    .header {
+        height: 20vh;
+        flex-direction: column;
+        margin: 40px 0;
+        padding: 0;
+    }
+
+    .header__logo {
+        margin-bottom: 20px;
+    }
+
+    .header__navbar {
+        width: 100%;
+    }
+
+    .header__navitem {
+        height: 80px;
+    }
+
+    .header__navitem:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--primary-colour);;
+    }
+}
+
 /* Searchbar section */
 
 .search {
@@ -237,9 +264,11 @@ li {
 .lodging {
     display: flex;
     justify-content: space-between;
+    margin: 50px 0;
 }
 
 .lodging__card-container {
-    background-color: var(--background);
+    background-color: var(--shadow);
     border-radius: 15px;
+    padding: 35px 25px;
 }
