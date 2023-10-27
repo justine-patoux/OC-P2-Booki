@@ -379,6 +379,7 @@ li {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     grid-auto-columns: auto;
+    margin: 30px 0;
 }
 
 .activities__card {
@@ -405,4 +406,40 @@ li {
 .activities__card h4 {
     font-size: 1em;
     padding-left: 10px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--shadow);
+    margin-top: 50px;
+    padding: 30px 20px;
+}
+
+.footer__navbar {
+    width: 100%;
+}
+
+.footer__navlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__navitem {
+    width: 33%;
+}
+
+.footer__navitem h3 {
+    font-size: 1em;
+    margin-bottom: 22px;
+}
+
+.footer__subnavitem {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.footer__subnavitem a:hover{
+    text-decoration: underline;
 }
