@@ -82,7 +82,7 @@ li {
     border-top: 2px solid var(--primary-colour);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .header {
         height: 20vh;
@@ -189,7 +189,7 @@ li {
     border-radius: 15px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
 
     .searchbar__input {
         width: 277px;
@@ -247,7 +247,7 @@ li {
     margin-right: 10px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
 
     .filters__container {
         flex-direction: column;
@@ -255,7 +255,7 @@ li {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 }
 
@@ -285,7 +285,7 @@ li {
 .card {
     background-color: #FFF;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px var(--background);
     padding: 5px;
 }
 
@@ -345,7 +345,7 @@ li {
     object-fit: cover;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
     .lodging {
         flex-direction: column;
     }
@@ -436,7 +436,7 @@ li {
 }
 
 .footer__subnavitem {
-    font-size: 0.9em;
+    font-size: 1em;
     margin-bottom: 20px;
 }
 
