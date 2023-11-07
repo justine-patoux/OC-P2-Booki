@@ -319,10 +319,10 @@ li {
     gap: 20px;
 }
 
-.city__card {
+/* .city__card {
     
     height: 197px;
-}
+} */
 
 .city__card-img {
     width: 100%;
@@ -337,6 +337,15 @@ li {
 
 .city__card p {
     font-size: 0.9em;
+    padding-bottom: 5px;
+}
+
+.star-added {
+    color: var(--primary-colour);
+}
+
+.star-default {
+    color: var(--shadow);
 }
 
 /* Les plus populaires */
@@ -357,6 +366,7 @@ li {
 }
 
 .popular__card figcaption {
+    position: relative;
     padding: 8px;
 }
 
@@ -365,6 +375,11 @@ li {
     height: 100%;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
+}
+
+.rating-wrapper {
+    position: absolute;
+    bottom: 5px;
 }
 
 @media (max-width: 1023px) {
